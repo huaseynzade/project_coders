@@ -1,0 +1,718 @@
+html {
+    scroll-behavior: smooth;
+    transition: all 0.5s ease-in-out;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+.wrapper{
+    color: white;
+    
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/background_about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#email::placeholder{
+    color: white !important;
+}
+#email{
+    color: white;
+}
+article img{
+    animation: rotation 8s infinite linear;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin-top: 10px;
+
+}
+
+.testimonial{
+    padding: 30px 100px;
+}
+
+article h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+article h1::after{
+    content: "";
+    height: 5px;
+    width: 225px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+}
+
+
+
+blockquote{
+    font-family: sans-serif;
+    font-size: 22px;
+    margin-top: 30px;
+
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+header{
+    background-color: #b01317;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    /* position: fixed; */
+    display: inline-block;
+    width: calc(100% - 103px);
+    text-align: right;
+}
+
+.logo{
+    margin-left: 20px;
+    width: 4%;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 5px;
+    position: relative;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover{
+    transition: 0.3s;
+    background-color: #696969;
+    color: white;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+
+/* Ana Səhifə */
+#home_page h1{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 10%;
+    margin-top: 20%;
+    padding: 20px ;
+    transition: color 0.5s;
+
+}
+
+#home_page h1:hover{
+    color: #b01317;
+    font-family: sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 10%;
+    margin-top: 20%;
+    padding: 20px ;
+    transition: color 0.5s;
+}
+
+#home_page{
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/home_background.jpg);
+    background-position: top;
+    padding: 12px;
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+}
+
+
+/* Məhsullar */
+#products{
+    /* display: flex; */
+    justify-content: space-around;
+    /* margin: 100px 0; */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+.column {
+    padding: 0.5em 0;
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.row h1 {
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 60px;
+    text-align: center;
+    transition: color 0.5s;
+}
+
+.card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    transition: ease-in-out 0.2s;
+    /* color: #b01317; */
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: #F5515F;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3{
+    font-weight: 500;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-family: sans-serif;
+    text-align: center;
+    transition: color 0.5s;
+}
+
+.card h3:hover{
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+    transition: color 0.2s;
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000000;
+    transition: color 0.2s;
+}
+
+.card p:hover{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.2s;
+}
+
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.card:hover{
+    background: linear-gradient(#f2d50f, #da0641);
+    color: #ffffff;
+}
+  
+.card:hover .img-container {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+  
+@media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+ 
+ @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .card {
+      padding: 5em 1em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
+
+#mehsul1{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+  text-align: center;
+}
+
+#mehsul2{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+  }
+
+#mehsul3{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+.order{
+    font-size: 20px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.cards{
+    width: 20%;
+    box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.container{
+    padding: 5px 20px;
+}
+
+.container p, h2{
+    font-family: sans-serif;
+    margin: 15px 0;
+}
+
+img{
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+}
+
+.title1{
+    width: 100%;
+    height: 20vh;   
+     display: flex;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/hoodie_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed ;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title2{
+    height: 20vh;    display: flex;
+    background-attachment:fixed ;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/pant_background.jpg);
+    background-size: cover;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px 15px;align-items: center;
+    justify-content: center;
+}
+.cards img{
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+}
+.title3{
+    height: 20vh;    
+    display: flex;
+    background-attachment:fixed ;
+
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/ayaqqabi_sekil.jpg);
+    background-size: cover;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family:sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px 15px;    align-items: center;
+    justify-content: center;
+}
+
+/* About hissəsi */
+#about_us{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/background_about.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    padding: 12px;
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+}
+
+#about_us h1{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 75px;
+    text-align: center;
+    margin: 10%;
+    margin-top: 10%;
+    /* /* padding: 50px ; */
+    transition: color 0.5s;
+}
+
+#about_us p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    margin: 10%;
+}
+
+.logo_ag{
+    animation: rotation 8s infinite linear;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+/* Footer hissəsi */
+#footer{
+    background-color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#footer h1{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    /* margin: 2%; */
+    margin-left: 50px;
+    padding: 2px;
+    transition: color 0.5s;
+}
+
+
+#footer h1:hover{
+    color: rgb(0, 132, 255);
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    /* margin: 2%; */
+    margin-left: 50px;
+    padding: 2px;
+    transition: color 0.5s;
+}
+
+#footer .sosial_media a{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+.hoodies{
+    height: 80vh;
+    display: flex;
+    padding: 30px;
+
+}
+.panties{
+    height: 80vh;
+    display: flex;
+    padding: 30px;
+}
+.sneakers{
+    height: 80vh;
+    display: flex;
+    padding: 30px;
+}
+.card{
+    padding: 10px;
+    flex: 33%;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 3px black;
+    overflow: hidden;
+}
+.card.jordan .card-image{
+    width: 90%;
+}
+.card .card-image{
+    width: 60%;   
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    transition: ease-in-out 0.3s;
+}
+.card:hover .card-image{
+    
+    transform: scale(1.1);
+    border-bottom: 1px solid transparent;
+    /* transition: ease-in-out 0.2s; */
+}
+
+
+.card .card-header{
+    font-size: 25px;
+}
+.card .card-p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.card .card-button{
+    margin-top: 30px;
+    
+}
+.card .card-button a{
+
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+.card .card-button:hover a{
+    /* background-color: white;
+    color: black;
+    border-bottom: 7px solid #FF397C; */
+    color: gray;
+    background-color: #222831;
+    
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    background-color: #b01317;
+    color: #fff;
+    padding: 60px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 80px;
+    margin-bottom: 30px;
+  }
+  
+  .col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .email-id {
+    width: fit-content;
+    border-bottom: 1px solid #cccc;
+  }
+  ul li {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  
+  form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  
+  form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  form button .fas {
+    font-size: 16px;
+    color: #ccc;
+  }
+  .underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
+  .underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+  }
+  
+  @keyframes moving {
+    0% {
+      left: -20px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
